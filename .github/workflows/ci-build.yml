@@ -3,7 +3,7 @@ name: Cronycal CI Build
 on: push
 
 jobs:
-  # TODO: Verify markdown! Verify csharpier!
+  # TODO: Verify markdown!
 
   build:
     runs-on: ubuntu-latest
@@ -19,6 +19,12 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
+
+      - name: Install .NET tools
+        run: dotnet tool restore
+
+      - name: Verify formatting with CSharpier
+        run: dotnet csharpier --check .
 
       - name: Restore dependencies
         run: |
