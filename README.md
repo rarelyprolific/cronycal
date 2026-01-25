@@ -15,6 +15,10 @@ A perpetually unfinished web application to track which books I'm reading.
 - Use **Razor Pages** for UI or possibly **Vue.js** if I want SPA behaviours.
 - Consider **Axios** as a possible alternative to plain "fetch" for AJAX requests.
 
+## Hosting in Local Development
+
+- Use **SQL Server** container via **Docker Compose**.
+
 ## Code Quality
 
 - Use **csharpier** to auto-format the C# code.
