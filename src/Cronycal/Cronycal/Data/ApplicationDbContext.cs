@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Cronycal.Data
 {
-    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext(options)
-    {
-    }
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : IdentityDbContext(options) { }
 }
