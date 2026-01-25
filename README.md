@@ -1,5 +1,7 @@
 # cronycal
 
+# a bad markdown change
+
 A perpetually unfinished web application to track which books I'm reading.
 
 > [!WARNING]
