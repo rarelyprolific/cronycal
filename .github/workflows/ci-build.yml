@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      WORKING_DIR: src
+      WORKING_DIR: src/Cronycal
 
     steps:
       - name: Checkout code
