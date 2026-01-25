@@ -17,5 +17,4 @@ namespace Cronycal.Pages
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }
-
 }
