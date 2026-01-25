@@ -1,0 +1,33 @@
+name: Cronycal CI Build
+
+on: push
+
+jobs:
+  # TODO: Verify markdown! Verify csharpier!
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore dependencies
+        run: |
+          cd $WORKING_DIR
+          echo "Restoring dependencies in $WORKING_DIR"
+          dotnet restore
+
+      - name: Build
+        run: | 
+          cd $WORKING_DIR
+          echo "Building project in $WORKING_DIR"
+          dotnet build --configuration Release --no-restore
+
+    #   - name: Test
+    #     run: |
+    #       cd $WORKING_DIR
+    #       echo "Running tests in $WORKING_DIR"
+    #       dotnet test --configuration Release --no-build --verbosity normal
