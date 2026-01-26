@@ -9,8 +9,8 @@ A perpetually unfinished web application to track which books I'm reading.
 
 ## Development
 
-- It should be an **ASP.NET 10** website.
-- Use **ASP.NET Identity** to implement self-contained authn and authz.
+- It should be an **ASP.NET Core 10** website.
+- Use **ASP.NET Core Identity** to implement self-contained authn and authz.
 - Use **EF Core** with **SQL Server** for data persistence.
 - Use **Razor Pages** for UI or possibly **Vue.js** if I want SPA behaviours.
 - Consider **Axios** as a possible alternative to plain "fetch" for AJAX requests.
@@ -21,7 +21,8 @@ A perpetually unfinished web application to track which books I'm reading.
 
 ## Code Quality
 
-- Use **csharpier** to auto-format the C# code.
+- Using **csharpier** to auto-format the C# code.
+- Using **markdownlint** to validate markdown documentation.
 
 ## Testing
 

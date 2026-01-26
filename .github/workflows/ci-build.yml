@@ -13,16 +13,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '10.0.x'
-
+      # Node/NPM/JavaScript checks
       - name: Install markdownlint-cli2 tool via NPM
         run: npm install -g markdownlint-cli2
 
       - name: Verify markdown formatting with markdownlint
         run: markdownlint-cli2 "**/*.md"
+
+      # C#/.NET checks and builds
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
 
       - name: Install .NET tools
         run: dotnet tool restore
