@@ -14,6 +14,7 @@ A perpetually unfinished web application to track which books I'm reading.
 - Use **EF Core** with **SQL Server** for data persistence.
 - Use **Razor Pages** for UI or possibly **Vue.js** if I want SPA behaviours.
 - Consider **Axios** as a possible alternative to plain "fetch" for AJAX requests.
+- Think about using **Tailwind CSS** for UI styling.
 
 ## Hosting in Local Development
 
@@ -28,4 +29,4 @@ A perpetually unfinished web application to track which books I'm reading.
 
 - Use **xUnit** for unit testing.
 - Use **test containers** for integration testing.
-- Use **PlayWright** for automation/E2E/UI testing.
+- Use **Playwright** for automation/E2E/UI testing.
