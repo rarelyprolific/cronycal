@@ -30,3 +30,26 @@ A perpetually unfinished web application to track which books I'm reading.
 - Use **xUnit** for unit testing.
 - Use **test containers** for integration testing.
 - Use **Playwright** for automation/E2E/UI testing.
+
+## EF Migrations - Cheatsheet
+
+Add migration:
+
+```sh
+dotnet ef migrations add Initial --context Cronycal.Data.BooksContext
+  --project src/Cronycal/Cronycal/Cronycal.csproj
+```
+
+Remove migration:
+
+```sh
+dotnet ef migrations remove --context Cronycal.Data.BooksContext
+  --project src/Cronycal/Cronycal/Cronycal.csproj
+```
+
+Script migration:
+
+```sh
+dotnet ef migrations script --idempotent --context Cronycal.Data.BooksContext
+  --project src/Cronycal/Cronycal/Cronycal.csproj
+```
