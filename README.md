@@ -33,23 +33,10 @@ A perpetually unfinished web application to track which books I'm reading.
 
 ## EF Migrations - Cheatsheet
 
-Add migration:
+From `cd src/Cronycal/Cronycal`:
 
-```sh
-dotnet ef migrations add Initial --context Cronycal.Data.BooksContext
-  --project src/Cronycal/Cronycal/Cronycal.csproj
-```
+- Add migration: `dotnet ef migrations add Initial --context Cronycal.Data.BooksContext`
 
-Remove migration:
+- Remove migration: `dotnet ef migrations remove --context Cronycal.Data.BooksContext`
 
-```sh
-dotnet ef migrations remove --context Cronycal.Data.BooksContext
-  --project src/Cronycal/Cronycal/Cronycal.csproj
-```
-
-Script migration:
-
-```sh
-dotnet ef migrations script --idempotent --context Cronycal.Data.BooksContext
-  --project src/Cronycal/Cronycal/Cronycal.csproj
-```
+- Script migration: `dotnet ef migrations script --idempotent --context Cronycal.Data.BooksContext`
